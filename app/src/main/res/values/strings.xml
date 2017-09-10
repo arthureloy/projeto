@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Jogo da Velha</string>
+    <string name="botao_sim">Sim</string>
+    <string name="botao_nao">Não</string>
+    <string name="fim_de_jogo">Fim do game!</string>
+    <string name="jogador">Jogador: %s</string>
+    <string name="velha">Deu velha!</string>
+    <string name="recomeco">Deseja recomeçar?</string>
+    <string name="resetado">Jogo resetado!</string>
+    <string name="jogador1">Jogador 1</string>
+    <string name="jogador2">Jogador 2</string>
+</resources>
