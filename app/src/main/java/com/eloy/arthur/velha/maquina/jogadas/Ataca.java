@@ -13,10 +13,10 @@ import java.util.List;
 
 public class Ataca implements Jogada {
 
-    private List<ImageButton> buttons;
+    private List<ImageButton> campos;
 
-    public Ataca(List<ImageButton> buttons) {
-        this.buttons = buttons;
+    public Ataca(List<ImageButton> campos) {
+        this.campos = campos;
     }
 
     @Override
@@ -27,7 +27,7 @@ public class Ataca implements Jogada {
 
     private ImageButton melhorJogadaHandler() {
         MelhorJogada melhorJogada = new MelhorJogada();
-        for (ImageButton b : buttons) {
+        for (ImageButton b : campos) {
             List<Game> games = ((Games) b.getTag()).getGames();
             int jogos = 0;
             for (Game g : games)
@@ -43,7 +43,7 @@ public class Ataca implements Jogada {
     }
 
     private ImageButton getJogadaPossivel() {
-        for (ImageButton b : buttons)
+        for (ImageButton b : campos)
             if (b.isEnabled()) return b;
         return null;
     }

@@ -23,6 +23,7 @@ public class HomeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(HomeActivity.this, GameActivity.class);
                 startActivity(i);
+
             }
         });
     }
